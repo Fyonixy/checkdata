@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Tesku</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            tampilkanInfo();
+        });
+        function tampilkanInfo() {
+            $.ajax({
+                url: '/info',
+                type: 'POST',
+                success: function(response) {
+                }
+            });
+        }
+    </script>
+</body>
+</html>
